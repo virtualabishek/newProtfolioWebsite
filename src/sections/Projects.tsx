@@ -1,31 +1,31 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
+import rojgarSabailai from "@/assets/images/rojgarSabailai.png";
+import nepDocPage from "@/assets/images/nepDoc.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "nepDoc",
+    year: "2024",
+    title: "A Doctor Appointment Application",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "A Smooth & Functional UI/UX" },
+      { title: "All the details about Doctor" },
+      { title: "User Can Logged In to get access" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://nep-doc.vercel.app/",
+    image: nepDocPage,
   },
   {
-    company: "Innovative Co",
+    company: "Rojgar Sabailai",
     year: "2021",
-    title: "Light Saas Landing Page",
+    title: "Rojgar Sabailai - A Online Job Portal",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Created a responsive UI/UX" },
+      { title: "User can create and post a job" },
+      { title: "Filter of a relative job" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://rojgarsabailai.netlify.app/",
+    image: rojgarSabailai,
   },
   {
     company: "Quantum Dynamics",
@@ -36,7 +36,7 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://abishekn.com.np",
     image: aiStartupLandingPage,
   },
 ];
