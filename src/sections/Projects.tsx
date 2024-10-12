@@ -9,13 +9,12 @@ import grainImage from "@/assets/images/grain.jpg";
 const portfolioProjects = [
   {
     company: "nepDoc",
-
     year: "2024",
     title: "A Doctor Appointment Application",
     results: [
       { title: "A Smooth & Functional UI/UX" },
       { title: "All the details about Doctor" },
-      { title: "User Can Logged In to get access" },
+      { title: "User Can Log In to get access" }, // Corrected 'Logged In'
     ],
     link: "https://nep-doc.vercel.app/",
     image: nepDocPage,
@@ -23,7 +22,7 @@ const portfolioProjects = [
   {
     company: "Rojgar Sabailai",
     year: "2021",
-    title: "Rojgar Sabailai - A Online Job Portal",
+    title: "Rojgar Sabailai - An Online Job Portal", // 'A Online' -> 'An Online'
     results: [
       { title: "Created a responsive UI/UX" },
       { title: "User can create and post a job." },
@@ -58,14 +57,16 @@ export const ProjectsSection = () => {
         <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl lg:text-xl">
           Featured Projects
         </h2>
-        <p className="text-center text-white/60 mt-4 md:text-lg max-w-md">
-          See how I transformed concepts into engaging digital experience.
+        <p className="text-center text-white/60 mt-4 md:text-lg max-w-md mx-auto">
+          {" "}
+          {/* Centered and adjusted max width */}
+          See how I transformed concepts into engaging digital experiences.
         </p>
         <div className="md:mt-20 flex flex-col mt-10 gap-20">
           {portfolioProjects.map((project) => (
             <div
               key={project.title}
-              className="bg-gray-800 rounded-3xl relative  z-0 overflow-hidden after:z-10 after:contents-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none"
+              className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 after:pointer-events-none"
             >
               <div
                 className="absolute inset-0 -z-10 opacity-5"
@@ -86,7 +87,12 @@ export const ProjectsSection = () => {
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5 ">
                     {project.results.map((result) => (
-                      <li className="flex gap-2 text-sm md:text-base text-white/50">
+                      <li
+                        className="flex gap-2 text-sm md:text-base text-white/50"
+                        key={result.title}
+                      >
+                        {" "}
+                        {/* Added key for list items */}
                         <CheckCircleIcon className="size-5" />
                         <span>{result.title}</span>
                       </li>
@@ -99,9 +105,11 @@ export const ProjectsSection = () => {
                     </button>
                   </a>
                 </div>
-                <div className="relative">
+                <div className="relative lg:flex lg:items-center">
+                  {" "}
+                  {/* Center the image vertically */}
                   <Image
-                    className="mt-8 -mb-4 md:-mb-0 md:w-full rounded-xl md:justify-center md:rounded-3xl lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="mt-8 -mb-4 md:-mb-0 md:w-full rounded-xl md:justify-center md:rounded-3xl lg:mt-0 lg:h-full lg:w-auto lg:max-w-none"
                     src={project.image}
                     alt={project.title}
                   />
