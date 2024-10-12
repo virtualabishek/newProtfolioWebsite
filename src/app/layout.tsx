@@ -7,12 +7,13 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const calistoga = Calistoga({
   subsets: ["latin"],
   variable: "--font-serif",
-  weight: "400",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
-  description: "Created with the help of Frontend Tribe",
+  title: "Abishek Neupane - Developer ",
+  description:
+    "Virtual Abishek a.k.a Abishek Neupane. I learning development from Nepal. This is my protfolio Website. ",
 };
 
 export default function RootLayout({
